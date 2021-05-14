@@ -5,19 +5,16 @@
 )
 
 ;; --- packages ----------------------------------------------------------------
-(use-package solarized-theme
-  :ensure t
+(use-package solarized-theme :ensure t
   :config (load-theme 'solarized-dark t)
 )
 
-(use-package evil
-  :ensure t
+(use-package evil :ensure t
   :config
     (evil-mode 1)
     (c:load-tools c:emacs-package-config-dir "evil.el")
 )
 
-(use-package which-key
-  :ensure t
+(use-package which-key :ensure t
   :config (setq which-key-popup-type 'side-window)
 )
