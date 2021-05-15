@@ -16,5 +16,5 @@
 )
 
 (use-package which-key :ensure t
-  :config (setq which-key-popup-type 'side-window)
+  :config (which-key-mode 1)
 )
