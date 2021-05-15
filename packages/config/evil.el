@@ -59,3 +59,11 @@
   (call-interactively (key-binding (kbd "j")))
 )
 (evil-define-key 'normal 'global "zk" 'cevil:drop-one-above)
+
+(defun cevil:break-line ()
+  (interactive)
+  (call-interactively (key-binding (kbd "i")))
+  (call-interactively (key-binding (kbd "RET")))
+  (evil-change-to-previous-state (current-buffer))
+)
+(evil-define-key 'normal 'global "zx" 'cevil:break-line)
