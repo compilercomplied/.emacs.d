@@ -31,8 +31,8 @@
 
 ;; --- imports -----------------------------------------------------------------
 (c:load-tools c:emacs-package-dir "init.el")
-(c:load-tools c:emacs-config-dir "core.el")
 (c:load-tools c:emacs-config-dir "preload.el")
+(c:load-tools c:emacs-config-dir "core.el")
 
 
 ;; -----------------------------------------------------------------------------

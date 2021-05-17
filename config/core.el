@@ -11,3 +11,5 @@
 (set-frame-font "Fira Code-12" nil t)
 
 (setq-default tab-width 2)
+;; init with window max size
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
