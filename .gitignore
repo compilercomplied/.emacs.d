@@ -7,6 +7,8 @@
 auto-save-list
 tramp
 .\#*
+/.cache/
+.lsp-session*
 
 # Org-mode
 .org-id-locations
