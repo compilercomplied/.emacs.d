@@ -15,6 +15,9 @@
 
 ;; --- config bootstrap --------------------------------------------------------
 (defconst c:emacs-dir (getenv "EMACS_HOME") "")
+(defconst c:emacs-init-file
+  (expand-file-name (concat c:emacs-dir "/init.el"))
+)
 
 (defconst c:emacs-package-dir
   (expand-file-name (concat c:emacs-dir "/packages/"))
