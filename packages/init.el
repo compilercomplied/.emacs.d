@@ -25,8 +25,11 @@
 (use-package helm :ensure t
 	:config
 		(helm-mode 1)
-		(use-package helm-rg :ensure t
-			:config  (setq helm-rg-default-directory 'git-root)
+		(use-package ag :ensure t
+			:config
+				(use-package helm-ag :ensure t
+						:config  (setq helm-ag-base-command "rg --no-heading")
+				)
 		)
 )
 

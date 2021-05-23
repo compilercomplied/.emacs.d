@@ -11,3 +11,6 @@ for the first couple of them and then is just rubbish.
 #### evil
 
   - [Reddit post condensing a few blog posts](https://www.reddit.com/r/emacs/comments/4hmmla/how_much_evil_in_emacs/)
+
+### lsp
+ - [Find workspace symbols issue - no ETC](https://github.com/emacs-lsp/lsp-mode/issues/2460)
