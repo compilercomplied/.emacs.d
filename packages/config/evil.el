@@ -17,8 +17,8 @@
 	:config (evil-commentary-mode 1)
 )
 (use-package treemacs-evil :ensure t)
-;; TODO install evil-numbers
-;; (use-package evil-numbers :ensure t)
+
+(use-package evil-numbers :ensure t)
 
 
 ;; --- core --------------------------------------------------------------------
@@ -44,9 +44,3 @@
 ;; scroll up doesn't seem to be binded by default (?)
 (evil-define-key 'normal 'global (kbd "C-u") 'evil-scroll-up)
 (evil-define-key 'visual 'global (kbd "C-u") 'evil-scroll-up)
-
-;; TODO install evil-numbers
-;; (evil-define-key 'normal 'global (kbd "C-a") 'evil-numbers/inc-at-pt)
-;; (evil-define-key 'visual 'global (kbd "C-a") 'evil-numbers/inc-at-pt)
-;; (evil-define-key 'normal 'global (kbd "C-x") 'evil-numbers/dec-at-pt)
-;; (evil-define-key 'visual 'global (kbd "C-x") 'evil-numbers/dec-at-pt)
