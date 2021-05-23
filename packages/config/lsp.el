@@ -5,6 +5,11 @@
 (use-package company :ensure t
 	:config
 		(setq company-minimum-prefix-length 1 company-idle-delay 0.2)  ;; def 0.2
+		(use-package company-quickhelp :ensure t
+				:config
+						(setq company-quickhelp-delay 0.5)
+						(company-quickhelp-mode)
+		)
 )
 
 (use-package lsp-treemacs :ensure t)
